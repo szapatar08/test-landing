@@ -6,6 +6,7 @@
     text-decoration: none;
     color: #000;
     font-family: "Inter", sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -63,6 +64,7 @@ header .log-button .green-button {
 /*Main*/
 #initial-massage {
     margin: 15vh 0 5vh;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
 
@@ -72,15 +74,35 @@ header .log-button .green-button {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 4rem;
     border-bottom: 10px solid #54BD95;
 }
 
 #message-links, #message-links div {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #message-links .green-button {
     border-radius: 40px;
+}
+
+#banner-img img {
+    height: 100%;
+    width: auto;
+}
+
+@media (max-width: 1440px){
+    #initial-massage {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    #message, #message-links {
+        gap: 50px;
+    }
+
+    #banner-img {
+        justify-content: center;
+    }
 }
