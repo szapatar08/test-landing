@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     color: #000;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 .green-button {
     color: #F8F8FA;
     background-color: #54BD95;
+    padding: 10px;
 }
 
 .gray-text {
@@ -55,8 +57,30 @@ header .log-button {
 }
 
 header .log-button .green-button {
-    padding: 10px;
     border-radius: 10px;
 }
 
 /*Main*/
+#initial-massage {
+    margin: 15vh 0 5vh;
+    justify-content: space-between;
+}
+
+#message {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 80px;
+    border-bottom: 10px solid #54BD95;
+}
+
+#message-links, #message-links div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message-links .green-button {
+    border-radius: 40px;
+}
