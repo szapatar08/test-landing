@@ -154,6 +154,48 @@ h1 {
     font-size: 1.5rem;
 }
 
+/*---features*/
+#features {
+    grid-template-rows: auto 2fr;
+}
+
+#features-first-article, #features-second-article {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+#features-first-article h3 {
+    font-size: 2.5rem;
+    width: 70%;
+}
+
+#features-first-article div {
+    justify-content: center;
+    align-items: start;
+}
+
+#features-first-article a {
+    padding: 10px 20px;
+    background-color: #54BD95;
+    color: #F8F8FA;
+    border-radius: 20px;
+}
+
+#features-second-article div {
+    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#features-second-article h4 {
+    font-size: 1.5rem;
+}
+
+#features-second-article img {
+    width: 80%;
+    height: auto;
+}
+
 @media (max-width: 1440px){
     #initial-massage {
         grid-template-columns: 1fr;
