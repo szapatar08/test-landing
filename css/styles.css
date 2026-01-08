@@ -94,8 +94,7 @@ h1 {
 }
 
 #collabs {
-    margin: 100px 0 200px;
-    display: flex;
+    margin: 100px 0;
     flex-direction: column;
     gap: 50px;
     align-items: center;
@@ -107,9 +106,52 @@ h1 {
 
 #collabs article {
     width: 100%;
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+/*---Ratings---*/
+#second-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    height: 40vh;
+    margin: 100px 0;
+}
+
+#ratings {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ratings h2 {
+    font-size: 2.5rem;
+}
+
+#ratings-img {
+    justify-content: space-around;
+}
+
+#services {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services article{
+    gap: 20px;
+}
+
+#services article img {
+    width: 30px;
+    height: auto;
+}
+
+#services article .content {
+    flex-direction: column;
+    gap: 10px;
+}
+
+#services h3 {
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1440px){
